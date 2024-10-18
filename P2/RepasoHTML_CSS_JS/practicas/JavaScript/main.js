@@ -8,13 +8,13 @@ comentario de varias lines
 
 //variables
 
-var nombre = "Cecilia Gabriela Mendoza Gonzalez";
+var nombre = "Navarro Huerta Carlos Jair";
 
 // recomendada
 let nombre21 = "nombre2";
 
 //variables
-var nombre = "ceci";
+var nombre = "Carlos";
 let nombre2 = "AJA";
 let edad = 20;
 let estatura = 1.80;
