@@ -1,0 +1,82 @@
+/* Aplicar estilos generales  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/P2/proyectos/proyectoweb/img/background-clouds.jpg);
+}
+/* APLICAR ESTILOS A EL HEADER "INICIO" */
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0000008f;
+
+}
+#menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+#menu li{
+    text-align: center;
+}
+#menu li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#menu li a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+.nav-element p{
+    color: aliceblue;
+}
+#menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+/* Aplicar estilos a la seccion "sobremi" */
+
+#body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #0000008f;
+}
+#body h2{
+    font-size: 3rem;
+    color: aliceblue;
+}
+#body p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: aliceblue;
+}
+#body button{
+    background-color: blueviolet;
+    margin: 20px 20px;
+    padding: 10px 20px;
+}
+#body button a{
+    color: aliceblue;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* APLICAR ESTILOS A LA SECCION "SERVICIOS" */
+
+
+
+
+/* Aplicar estilos a el atributo class */
+
+
+
+/* Aplicar estilos al pie */
+
