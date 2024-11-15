@@ -1,0 +1,7 @@
+{% block content %}
+    <script>
+        alert('esta pagina no existe, lo voy a redirigirala pagina de inicio');
+        location.herf = '{% url "inicio" %}'
+    </script>
+
+{% endblock content %}

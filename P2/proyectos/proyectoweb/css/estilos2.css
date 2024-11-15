@@ -10,12 +10,18 @@ body{
     background-image: url(../img/background-clouds.jpg);
     height: 100vmin;
     background-size: cover;
+
   }
   
+  #inicio .blur{
+    background-color: #0000009c;
+  }
+
   .contenedor{
     margin: auto;
     width: 90%;
     max-width: 1920px;
+    height: 100vmin;
   }
   
   .menu{
@@ -27,7 +33,7 @@ body{
   .menu p{
     display: inline;
     font-size: 2vmax;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-style: italic;
   }
@@ -45,7 +51,7 @@ body{
   
   .btn-menu{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.5vw;
   }
@@ -65,20 +71,25 @@ body{
   .titular{
     margin-top: 12rem;
     text-align: center;
+    /*width: 60vw;*/
+  
   }
   
   .titular h1{
     font-size: 4vw;
     margin: 0;
+    color: #fff;
   }
   
   .titular h2{
     font-size: 2.5vw;
     margin-bottom: 4vw;
+    color: #fff;
+
   }
   
   .btn{
-    background-color: #5db8f8;
+    background-color: #230e2c;
     padding: 2vw;
     font-size: 1vw;
     color: white;
@@ -88,6 +99,8 @@ body{
   
   .btn:hover{
     font-size: 1.1vw;
+    background-color: #471e58;
+
   }
   
   .btn:active{
@@ -126,6 +139,12 @@ body{
     color: black;
     text-align: justify;
     margin-bottom: 2rem;
+  }
+
+  .contenedor-parrafo-y-boton .mailtext {
+
+    color: #230e2c;
+
   }
   
   .contenedor-sobremi{
