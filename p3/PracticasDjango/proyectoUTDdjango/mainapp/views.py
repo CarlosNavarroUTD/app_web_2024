@@ -9,7 +9,7 @@ def index(requets):
     })
 
 def about (request):
-    mensaje='Bienvenido mi Nombre es: Cecilia Gabriela Mendoza Gonzalez'
+    mensaje='Bienvenido mi Nombre es: Carlos Jair Navarro Huerta'
     return render (request, 'mainapp/about.html', {
         'title': 'Acerca de Nosotros',
         'content': 'Alumna en proceso de estudio para alcanzar las notas',
