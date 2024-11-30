@@ -1,9 +1,10 @@
-<!-- mi_aplicacion/templates/mi_aplicacion/index.html -->
-{% extends '../layout/layout.html' %}
+{% extends "layouts/layouts.html" %}
 
-{% block title %}Página de Inicio{% endblock %}
+{% block title %}
+    {{title}}
+{% endblock title %}
 
 {% block content %}
-<h2>Bienvenido a la Página de Inicio</h2>
-<p>Este es un ejemplo de cómo estructurar un proyecto Django.</p>
-{% endblock %}
+    <h1>{{title}}</h1>
+    <h2>{{content}}</h2>
+{% endblock content %}

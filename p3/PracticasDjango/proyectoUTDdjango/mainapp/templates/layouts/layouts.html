@@ -5,32 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {% block title %}{% endblock  %} |Django Proyecto UTD
+        {% block title %} {% endblock title %} dsjango proyecto utd
     </title>
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/estilos.css" %}" type="text/css">
 </head>
 <body>
     <header>
         <div id="logotipo">
-            <img src="{% static 'img/logodjango.png' %}" alt="Imagen Django" title="Django">
+            <img src="{% static "img/django-badge.png" %}" alt="Imagen Django" title="Django">
             <h1>Django Proyecto Web</h1>
         </div>
     </header>
     <nav>
         <ul>
             <li><a href="{% url "inicio" %}" >Inicio</a></li>
-            <li><a href="{% url "mision" %}">Misión</a></li>
-            <li><a href="{% url "vision" %}" >Visión</a></li>
+        {% if user.email %}
+            <li><a href="{% url "mision" %}">mision</a></li>
+            <li><a href="{% url "vision" %}">vision</a></li>
             <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "listado_articulos" %}">Articulos</a></li>
+            <li><a href="{% url "listado_categorias" %}">categorias</a></li>
+            <li><a href="{% url "logout" %}">Cerrar sesion</a></li>
+        
+        {% else %}
+            <li><a href="{% url "registrarse" %}">Registrarse</a></li>
+            <li><a href="{% url "iniciar_sesion" %}">Iniciar sesion</a></li>
+            
+            
+            
+        
+        {% endif %}
+            
+            
+            
+            
+            
+            
         </ul>
     </nav>
     <section id="content">
        <div class="box">
-        {% block content %} {% endblock content %}
+            {% block content %}{% endblock content %}
        </div>
     </section>
     <footer>
-        <p>Django con SharlyeNavarro &copy; 2024 | Visitado el: {% now "Y-m-d H:i" %}</p>
+        <p>Django con Sharlye &copy; 2024 | Visitado el: {% now "Y-m-d H:i" %}</p>
     </footer>
 </body>
 </html>
